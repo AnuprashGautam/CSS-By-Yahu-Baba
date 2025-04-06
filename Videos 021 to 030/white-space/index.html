@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>white-space Property</title>
+    <style>
+        #box{
+            border: 2px solid black;
+            width: 300px;
+            /* Align the whole paragraph in the single line after formatting. Formatting means to remove the extra spaces. */
+            /* white-space: nowrap;           */
+
+            /* Shows the content as it is. */
+            /* white-space: pre;                  */
+
+            /* It just maintain the newline characters. Doesn't consider the extra spaces. */
+            white-space: pre-line;              
+
+            /*Shows the content as it is but it does not wrap the content. */
+            white-space: pre-wrap;                 
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        Lorem ipsum dolor sit amet                                      consectetur adipisicing elit. Ullam, saepe eum. Fuga ratione aspernatur totam cumque. Veniam consequatur explica
+        bo vero qui id, maiores eaque possimus nam accusantium iure repellat labo
+
+
+
+
+        
+        
+        re aperiam aliquid corrupti modi maxime dolorem dolorum tenetur similique necessitatibus voluptate! Maxime laudantium temporibus ipsa error totam doloremque, aut ducimus.
+    </div>
+</body>
+</html>

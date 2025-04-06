@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Writing Mode Example</title>
+  <style>
+    body {
+      display: flex;
+      gap: 50px;
+      padding: 40px;
+      font-size: 24px;
+      height: 100vh;
+    }
+
+    .vertical-rl {
+      writing-mode: vertical-rl;
+      border: 2px solid #4CAF50;
+      padding: 10px;
+      height: 300px;
+    }
+
+    .sideways-rl {
+      writing-mode: sideways-rl;
+      border: 2px solid #2196F3;
+      padding: 10px;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="vertical-rl">
+    こんにちは。これは縦書き（vertical-rl）です。
+  </div>
+
+  <div class="sideways-rl">
+    こんにちは。これは回転縦書き（sideways-rl）です。
+  </div>
+</body>
+</html>

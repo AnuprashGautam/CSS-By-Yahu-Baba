@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-overflow Property</title>
+    <style>
+        #box{
+            border: 2px solid red;
+            width: 200px;
+
+
+            white-space: nowrap;
+            overflow: hidden;
+            /* text-overflow: clip; */
+            /* text-overflow: ellipsis; */
+            /* This property only works in Firefox web browser. */
+            text-overflow:" - ";
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        Lorem ipsum, dolor siit amet consectetur adipisicing elit. Eligendi temporibus odit earum velit ipsum, id qui commodi, animi possimus aspernatur magnam aut quis fuga et officiis nesciunt numquam quo! Reprehenderit delectus dolor quos suscipit similique illo placeat sed atque sint pariatur, alias neque eos commodi unde doloribus, iure quas inventore.
+    </div>
+</body>
+</html>
