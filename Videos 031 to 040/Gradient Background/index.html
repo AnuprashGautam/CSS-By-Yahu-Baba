@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background in CSS</title>
+    <style>
+        #box1{
+            width: 80%;
+            height: 600px;
+            padding: 20px;
+            text-align: justify;
+            border: 3px solid black;
+            margin: 50px auto;
+            /* background: linear-gradient(red,yellow); */
+            /* background: linear-gradient(to right,red , yellow); */
+            /* background: linear-gradient(to right top,red , yellow); */
+            /* background: linear-gradient(45deg ,red , yellow); */
+            /* background: linear-gradient(45deg ,red , yellow, green, blue); */
+            /* background: linear-gradient(45deg ,red , #00ff00, rgb(63,45,12)); */
+            background: repeating-linear-gradient(to right,red, yellow 10% , green 20%);
+        }
+        #box2{
+            width: 80%;
+            height: 600px;
+            padding: 20px;
+            text-align: justify;
+            border: 3px solid black;
+            margin: auto;
+
+
+            /* background: radial-gradient(red 5%,orange 10%, yellow 30%,grey); */
+            /* background: radial-gradient(circle,red 5%,orange 10%, yellow 30%,grey); */
+
+            /* background: radial-gradient(farthest-side at 10% 50%,red 5%,orange 10%, yellow 30%,grey); */
+            /* background: radial-gradient(farthest-corner at 10% 30%,red 5%,orange 10%, yellow 30%,grey); */
+
+            background: repeating-radial-gradient(farthest-corner at 10% 30%,red 5%,yellow 50px, green 20%);
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt ex qui, pariatur cumque deserunt quisquam expedita rerum, ab sunt possimus, neque nulla? Repellendus quisquam delectus sed sint voluptatibus, architecto facere harum culpa blanditiis quaerat quis dignissimos aperiam saepe totam! Libero.
+    </div>
+
+    <div id="box2">
+        Sun
+    </div>
+</body>
+</html>
