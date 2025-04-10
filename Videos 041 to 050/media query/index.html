@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basic Layout Design</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica;
+            background-color: antiquewhite;
+        }
+        #wrapper{
+            width: 90%;
+            border: 1px solid black;
+            margin: 50px auto;
+        }
+        #heading{
+            background-color: red;
+            height: 100px;
+        }
+        #heading h1{
+            margin: 0;
+            padding: 30px 0px 0px 20px;
+            color: white;
+        }
+        #menu{
+            background-color: orange;
+            min-height: 40px;
+            color: black;
+        }
+        #menu ul{
+            margin: 0;
+            padding: 0;
+        }
+        #menu li{
+            display: inline-block;
+        }
+        #menu li a{
+            display: block;
+            padding: 10px 13px;
+            text-decoration: none;
+        }
+        #menu li a:hover{
+            
+            background: linear-gradient(to top right,red, yellow);
+            color: white;
+            border-radius: 10px;
+        }
+        #content{
+            width: 70%;
+            float: left;
+            min-height: 350px;
+            background-color: white;
+            padding: 20px;
+            text-align: justify;
+            box-sizing: border-box;
+        }
+        #sidebar{
+            width: 30%;
+            float: right;
+            background-color: skyblue;
+            height: 350px;
+        }
+        #sidebar li a{
+            text-decoration: none;
+            color: black;
+        }
+        #footer{
+            clear: both;
+            height: 40px;
+            background-color: orange;
+            text-align: right;
+        }
+        #website{
+            display: block;
+            padding: 10px 13px;
+        }
+
+        /* Mobile */
+        @media screen AND (max-width:390px)
+        {
+            #sidebar{
+            width: 100%;
+            background-color: skyblue;
+            height: 100px;
+            }
+
+            #content{
+            width: 100%;
+            min-height: 350px;
+            background-color: white;
+            padding: 20px;
+            text-align: justify;
+            box-sizing: border-box;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="heading">
+            <h1>Website Name</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2>Sub Heading</h2>
+    
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum temporibus quibusdam eveniet facilis porro veritatis, ipsa omnis sit, vel dolore, harum error nam delectus ipsam quam cupiditate ea officiis necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odit, aut hic dolore nulla, magni eum nostrum ducimus, quasi consequuntur modi voluptatum quam ex molestiae incidunt delectus! Animi, blanditiis quod.</p>
+    
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quidem consequuntur porro, quis voluptatibus facilis mollitia dolore eius beatae quisquam!</p>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            <div id="website">Website name@copyright</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index Property</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            width: 800px;
+            height: 700px;
+            background-color: #e2e2e2;
+            font-size: 30px;
+            text-align: end;
+            position: relative;
+        }
+        #box1{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: red;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            z-index: 4;
+        }
+        #box2{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: green;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            z-index: 3;
+        }
+        #box3{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: blue;
+            position: absolute;
+            left: 150px;
+            top: 150px;
+            z-index: 2;
+        }
+        #box4{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: orange;
+            position: absolute;
+            left: 200px;
+            top: 200px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1">A</div>
+        <div id="box2">B</div>
+        <div id="box3">C</div>
+        <div id="box4">D</div>
+    </div>
+</body>
+</html>
