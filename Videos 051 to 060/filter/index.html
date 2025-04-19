@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>filter Tutorial</title>
+    <style>
+      body {
+        height: 110vh;
+        background-color: pink;
+      }
+      #flower img {
+        width: 50%;
+        height: auto;
+        /* filter: blur(5px); */
+        /* filter: brightness(140%); */
+        /* filter: contrast(70%); */
+        /* filter: drop-shadow(-10px -10px 5px red); */
+        /* filter: grayscale(70%); */
+        /* filter: hue-rotate(0deg); */
+        /* filter: invert(40%); */
+        /* filter: opacity(50%); */
+        /* filter: saturate(0%); */
+        /* filter: sepia(500%); */
+        filter: blur(10px) grayscale(100%)  ;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="flower">
+      <img src="image/landcscape.jpg" alt="Landcscape" />
+    </div>
+  </body>
+</html>

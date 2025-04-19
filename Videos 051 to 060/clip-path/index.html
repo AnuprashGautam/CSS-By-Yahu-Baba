@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clip-path Property</title>
+    <style>
+        body{
+            background: brown;
+        }
+        img{
+            height: 700px;
+            width: 700px;
+            position: absolute;
+            left: calc(50% - 350px);
+            top: calc(50% - 350px);
+
+            /* clip-path: circle(50% at 50% 0%); */
+            /* clip-path: ellipse(50% 10% at 0% 50%); */
+            /* clip-path: inset(10% 20% 10% 20%); */
+            /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+    </style>
+</head>
+<body>
+    <img src="image/flower.jpg" alt="Flower">
+</body>
+</html>

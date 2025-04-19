@@ -1,0 +1,213 @@
+<html>
+	<head>
+		<title>Transform Example</title>		
+		<style>					
+			body{
+				font-family:arial,helvetica;
+				
+			}
+			div{
+				font-size:20px;
+				
+				text-align:center;
+				box-sizing:border-box;
+			}
+			div div{
+				padding-top: 20px;
+			}
+			.no-presBox{
+				width: 200px;
+				height: 150px;
+				margin :0 0 70px 100px;
+				background: grey;
+			}
+			.presBox{
+				width: 200px;
+				height: 150px;
+				margin :0 0 70px 100px;
+				background: grey;
+			}
+			#box{
+				width: 200px;
+				height: 150px;
+				background: pink;
+				
+				transform: rotateX(0deg);
+				transition:transform 1s;
+			}
+			#box:hover{
+				transform: rotateX(180deg);
+			}
+			#boxi{
+				width: 200px;
+				height: 150px;
+				background: pink;
+				
+				transform:perspective(800px) rotateX(0deg);
+				transition:transform 1s;
+			}
+			#boxi:hover{
+				transform:perspective(800px) rotateX(180deg);
+			}
+			#box2{
+				width: 200px;
+				height: 150px;
+				background: tomato;
+				
+				transform: rotateY(0deg);
+				transition:transform 1s;
+				
+			}
+			#box2:hover{
+				transform:rotateY(180deg);
+			}
+			#box2i{
+				width: 200px;
+				height: 150px;
+				background: tomato;
+				
+				transform:perspective(800px)  rotateY(0deg);
+				transition:transform 1s;
+				
+			}
+			#box2i:hover{
+				transform:perspective(800px)  rotateY(180deg);
+			}
+			#box3{
+				width: 200px;
+				height: 150px;
+				background: yellowgreen;
+				
+				transform: rotateZ(0deg);
+				transition:transform 1s;				
+			}
+			#box3:hover{
+				transform: rotateZ(180deg);
+			}
+			#box4{
+				width: 200px;
+				height: 150px;
+				background: lightblue;	
+				
+				transform:rotateY(60deg) translateZ(0px);
+				transition:transform 1s;		
+			}
+			#box4:hover{
+				transform:  rotateY(60deg) translateZ(200px);
+			}
+			
+			#box4i{
+				width: 200px;
+				height: 150px;
+				background: lightblue;	
+				
+				transform: perspective(800px) rotateY(60deg) translateZ(0px);
+				transition:transform 1s;		
+			}
+			#box4i:hover{
+				transform: perspective(800px)  rotateY(60deg) translateZ(200px);
+			}
+			
+			#box42{
+				width: 200px;
+				height: 150px;
+				background: lightblue;	
+				
+				transform: perspective(800px) rotateY(60deg) translateX(0px);
+				transition:transform 1s;		
+			}
+			#box42:hover{
+				transform: perspective(800px)  rotateY(60deg) translateX(200px);
+			}
+			
+			#box5{
+				width: 200px;
+				height: 150px;
+				background: lightgreen;	
+				
+				transform:scaleZ(1)  rotateX(60deg);
+				transition:transform 1s;		
+			}
+			#box5:hover{
+				transform: scaleZ(3)  rotateX(60deg);
+			}
+			
+			#box5i{
+				width: 200px;
+				height: 150px;
+				background: lightgreen;	
+				
+				transform:perspective(800px) scaleZ(1)  rotateX(60deg);
+				transition:transform 1s;		
+			}
+			#box5i:hover{
+				transform:perspective(800px) scaleZ(3)  rotateX(60deg);
+			}
+			#box52{
+				width: 200px;
+				height: 150px;
+				background: lightgreen;	
+				
+				transform:perspective(800px) scaleZ(1)  rotateX(60deg);
+				transition:transform 1s;		
+			}
+			#box52:hover{
+				transform:perspective(800px) scaleZ(6)  rotateX(60deg);
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1 style="margin-bottom: 50px;">Yahoo Baba : CSS Transform 3D Examples</h1>		
+				
+		<table>
+			<tr>
+				<td valign="top" width="400px">
+					<div class="no-presBox"><div id="box">Rotate X</div></div>
+					
+				</td>
+				<td valign="top" width="400px">
+					<div class="presBox"><div id="boxi">Rotate X <br> & <br>Perspective</div></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="no-presBox"><div id="box2">Rotate Y</div></div>
+					
+				</td>
+				<td>
+					<div class="presBox"><div id="box2i">Rotate Y <br> & <br>Perspective</div></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="no-presBox"><div id="box3">Rotate Z</div></div>
+					
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					<div class="no-presBox"><div id="box4">Translate Z</div>		</div>
+				</td>
+				<td>
+					<div class="presBox"><div id="box4i">Translate Z <br> & <br>Perspective</div>		</div>
+				</td>
+				<td>
+					<div class="presBox"><div id="box42">Translate X </div>		</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="no-presBox"><div id="box5">Scale Z</div>		</div>
+				</td>
+				<td>
+					<div class="presBox"><div id="box5i">Scale Z <br> & <br>Perspective</div>		</div>
+				</td>
+				<td>
+					<div class="presBox"><div id="box52">Scale Z <br> & <br>Perspective</div>		</div>
+				</td>
+			</tr>
+		</table>
+	</body>	
+</html>
