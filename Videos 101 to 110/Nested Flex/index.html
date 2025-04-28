@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Flex Tutorial</title>
+    <style>
+        .container{
+            background-color: #f2f2f2;
+            width: 500px;
+            height: 400px;
+            border: 2px solid black;
+            text-align: center;
+            margin: 50px auto;
+            box-sizing: content-box;
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: stretch;
+            flex-direction: column;
+        }
+
+        .items
+        {
+            border: 0px solid black;
+            height: 100px;
+            box-sizing: border-box;
+        }
+
+        .item-1{
+            background-color: orange;
+            color: white;
+        }
+        .item-2{
+            background-color: greenyellow;
+            color: white;
+        }
+        .item-3{
+            background-color: skyblue;
+            color: white;
+        }
+        .item-4{
+            background-color: yellow;
+            color: white;
+        }
+        
+        .item-3{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .item-3 > .subitems{
+            width: 30%;
+            height: 80%;
+            background-color: #f2f2f2;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item-1">One</div>
+        <div class="items item-2">Two</div>
+        <div class="items item-3">
+            <div class="subitems subitem-1">A</div>
+            <div class="subitems subitem-1">B</div>
+            <div class="subitems subitem-1">C</div>
+        </div>
+        <div class="items item-4">Four</div>
+    </div>
+</body>
+</html>

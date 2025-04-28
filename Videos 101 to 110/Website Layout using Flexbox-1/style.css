@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background: linear-gradient(45deg, tomato , white);
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+header ul{ 
+    list-style: none;
+    display: flex;
+    padding: 0px;
+}
+
+header a{
+    color: black;
+}
+
+#logo{
+    margin: 0 auto;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#menu li{
+    padding: 10px;
+}
+
+#social-links li{
+    padding: 10px;
+}
+
+#main{
+    display: flex;
+}
+
+aside{
+    flex: 0 0 20vw;
+    background: linear-gradient(45deg, yellowgreen , white);
+    padding: 10px;
+}
+
+aside ul{
+    list-style: none;
+    padding: 0;
+}
+
+aside ul a{
+    color: rgb(83, 83, 83);
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid grey ;
+}
+
+aside img{
+    width: 100%;
+}
+
+article{
+    padding: 10px;
+}
+
+.services-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.service-box{
+    border: 1px solid #eee;
+    padding: 10px;
+    flex-basis: 32%;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-box h3{
+    margin: 5px 0 10px;
+}
+
+.service-box p{
+    margin-top: 0px;
+}
+
+.service-box img{
+    width: 100%;
+    height: 200px;
+}
+
+.call-to-action{
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.call-to-action a{
+    background: grey;
+    padding: 8px 10px;
+    color: white;
+    display: block;
+}
+
+.call-to-action a:hover{
+    background: white;
+    color: black;
+    outline: solid 1px black;
+}
+
+.footer{
+    background: linear-gradient(45deg, tomato , white);
+    color: black;
+    padding: 15px 0px;
+    text-align: center;
+}

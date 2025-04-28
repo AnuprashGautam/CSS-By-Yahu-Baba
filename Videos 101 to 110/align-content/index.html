@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-content Property</title>
+
+    <style>
+        .container{
+            background-color: #f2f2f2;
+            width: 550px;
+            height: 600px;
+            border: 2px solid black;
+            font-family: Arial, Helvetica;
+            text-align: center;
+            margin: 50px auto;
+
+            display: flex;
+            flex-wrap: wrap;
+            align-content: stretch;
+        }
+
+        .items
+        {
+            width: 100px;
+            /* height: 30px; */
+            border: 1px solid black;
+        }
+
+        .item-1{
+            background-color: orange;
+            color: white;
+        }
+        .item-2{
+            background-color: greenyellow;
+            color: white;
+        }
+        .item-3{
+            background-color: skyblue;
+            color: white;
+        }
+        .item-4{
+            background-color: yellow;
+            color: white;
+        }
+        .item-5{
+            background-color: Tomato;
+            color: white;
+        }
+        .item-6{
+            background-color: Magenta;
+            color: white;
+        }
+        .item-7{
+            background-color: Red;
+            color: white;
+        }
+        .item-8{
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item-1">Orange</div>
+        <div class="items item-2">Green</div>
+        <div class="items item-3">Blue</div>
+        <div class="items item-4">Yellow</div>
+        <div class="items item-5">Tomato</div>
+        <div class="items item-6">Magenta</div>
+        <div class="items item-7">Red</div>
+        <div class="items item-8">Grey</div>
+    </div>
+</body>
+</html>
