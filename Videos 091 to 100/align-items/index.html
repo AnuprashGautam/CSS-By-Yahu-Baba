@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items Property</title>
+
+    <style>
+        .container{
+            background-color: #f2f2f2;
+            width: 80%;
+            height: 600px;
+            padding: 20px;
+            border: 2px solid black;
+            font-family: Arial, Helvetica;
+            text-align: center;
+            margin: 50px auto;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .items
+        {
+            width: 60px;
+            height: 30px;
+            border: 1px solid black;
+        }
+
+        .item-1{
+            background-color: orange;
+            color: white;
+        }
+        .item-2{
+            background-color: greenyellow;
+            color: white;
+            height: 60px;
+        }
+        .item-3{
+            background-color: skyblue;
+            color: white;
+        }
+        .item-4{
+            background-color: yellow;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item-1">Orange</div>
+        <div class="items item-2">Green</div>
+        <div class="items item-3">Blue</div>
+        <div class="items item-4">Yellow</div>
+    </div>
+</body>
+</html>

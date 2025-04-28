@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-fill-mode Property</title>
+    <style>
+        #box{
+            width: 150px;
+            height: 150px;
+            background-color: black;
+            margin-left: 20px;
+
+            animation: sample 2s 1s both;
+            /* animation-fill-mode: forwards; */
+            animation-play-state: paused;
+        }
+
+        #box:hover{
+            animation-play-state: running;
+        }
+
+        @keyframes sample{
+            0%{
+                background-color: yellow;
+                width: 250px;
+            }
+            50%{
+                background-color: green;
+                width: 350px;
+            }
+            100%{
+                background-color: blue;
+                width: 450px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box">Box</div>
+</body>
+</html>

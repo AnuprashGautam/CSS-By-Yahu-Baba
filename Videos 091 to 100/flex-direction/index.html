@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-direction Property</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica;
+            font-size:60px;
+        }
+        .container{
+            background-color: #f2f2f2;
+            width: 80%;
+            height: 400px;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 20px;
+            text-align: center;
+            margin: 50px auto;
+
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .items
+        {
+            width: 20%;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+
+        .item-1{
+            background-color: orange;
+            color: white;
+        }
+        .item-2{
+            background-color: greenyellow;
+            color: white;
+        }
+        .item-3{
+            background-color: skyblue;
+            color: white;
+        }
+        .item-4{
+            background-color: yellow;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item-1">One</div>
+        <div class="items item-2">Two</div>
+        <div class="items item-3">Three</div>
+        <div class="items item-4">Four</div>
+    </div>
+</body>
+</html>

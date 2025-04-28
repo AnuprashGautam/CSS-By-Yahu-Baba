@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Properties</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            font-family: Arial, Helvetica;
+        }
+        #box{
+            width: 300px;
+            height: 300px;
+            margin-top: calc(50vh - 150px);
+            margin-left: calc(50% - 150px);
+            background-color: white;
+            color: tomato;
+            border: 0px solid black;
+            border-radius: 20px;
+            text-align: center;
+            line-height: 300px;
+            font-size: 80px;
+            font-weight: bolder;
+
+            animation-name: my-animation;
+            animation-duration: 3s;
+            animation-timing-function: cubic-bezier(0.1, 0.4, 1.0, 0.1);
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+
+            /* animation: my-animation  3s cubic-bezier(0.1, 0.4, 1.0, 0.1) 0s infinite alternate-reverse; */
+        }
+
+        @keyframes my-animation {
+            0%{
+                border-radius: 20px;
+            }
+            50%{
+                border-radius: 25%;
+                background-color: skyblue;
+                color: white;
+            }
+            100%{
+                border-radius: 50%;
+                background-color: tomato;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box">Go!</div>
+</body>
+</html>

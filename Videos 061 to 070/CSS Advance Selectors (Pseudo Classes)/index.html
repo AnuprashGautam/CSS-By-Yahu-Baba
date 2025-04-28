@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Advance Pseudo Class Selectors</title>
+    <style>
+        /* 1. :first-child */
+
+        p:first-child{
+            color: red;
+        }
+
+        /* 2. :last-child */
+
+        p:last-child{
+            color: red;
+        }
+
+        /* 3. :nth-child */
+
+        /* #nthchild li:nth-child(2)
+        {
+            color: blue;
+        } */
+
+        #nthchild li:nth-child(2n+1)
+        {
+            background-color: #f2f2f2;
+        }
+
+        /* 4. :nth-last-child */
+
+        #nthlastchild li:nth-last-child(1){
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>:first-child and :last-child</h2>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <hr>
+
+    <h2>:nth-child</h2>
+
+    <ul id="nthchild">
+        <li>Orange</li>
+        <li>Mango</li>
+        <li>Papaya</li>
+        <li>Pineapple</li>
+        <li>Grapes</li>
+        <li>Guava</li>
+    </ul>
+
+    <hr>
+
+    <h2>:nth-last-child</h2>
+
+    <ul id="nthlastchild">
+        <li>Orange</li>
+        <li>Mango</li>
+        <li>Papaya</li>
+        <li>Pineapple</li>
+        <li>Grapes</li>
+        <li>Guava</li>
+    </ul>
+
+    <hr>
+</body>
+</html>

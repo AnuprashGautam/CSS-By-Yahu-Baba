@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Attribute Selectors</title>
+	<style>
+		body{
+			font-family: arial;
+		}
+		p{
+			font-size: 19px;
+			line-height: 25px;
+		}
+		
+		/* ======================================= */
+		/* only attribute */
+		/* ======================================= */
+
+		/* img[title]{
+			border: 3px solid red;
+		}
+		input[type]{
+			border: 3px solid blue;
+		}
+		a[target]{
+			color: red;
+		} */
+
+		/* ======================================= */
+		/* attribute with value */
+		/* ======================================= */
+		
+		/* input[type="password"]{
+			border: 3px solid red;
+		}
+
+		img[alt="Image of cat"]{
+			border: 3px solid red;
+		} */
+
+		/* ======================================= */
+		/* Attribute begins with value */
+		/* ======================================= */
+
+		/* img[alt^="Image"]{
+			border: 3px solid red;
+		} */
+
+		img[title^="flower"]{
+			border: 3px solid red;
+		}
+
+		/* ======================================= */
+		/* Attribute begins with value OR is first in a dash separated list */
+		/* ======================================= */
+
+		/* img[alt|="Image"]{
+			border: 3px solid red;
+		} */
+
+		/* ======================================= */
+		/* Attribute ends with value */
+		/* ======================================= */
+
+		/* img[alt$="cat"]{
+			border: 3px solid red;
+		}
+
+		a[href$=".png"]{
+			color: red;
+		}
+		a[href$=".net"]{
+			color: red;
+		} */
+
+		/* ======================================= */
+		/* Attribute value occurs anywhere in attribute */
+		/* ======================================= */
+
+		/* img[alt*="of"]{
+			border: 3px solid blue;
+		} */
+
+		/* ======================================= */
+		/* Attribute value matches attribute in space separated list. */
+		/* ======================================= */
+
+		/* img[alt~="of"]{
+			border: 3px solid blue;
+		} */
+
+	</style>
+</head>
+<body>
+	<h1>Yahoo Baba : CSS Attribute Selectors</h1>
+
+	<img src="images/cat.png" width="200px" alt="Image of cat">
+
+	<p>Lorem <a href="">ipsum dolor</a> sit amet, consectetur adipisicing elit. Dolore, tempora minus! Illum totam iure <a href="www.yahoobaba.net" target="_blank">laborum</a>	 maxime? Libero illo ad eos vel quam veniam facilis, commodi inventore recusandae officiis nulla a, nisi corrupti adipisci explicabo praesentium nobis unde reprehenderit quas sequi, quia aliquid placeat culpa! <a href="images/logo.png">Voluptate omnis</a> delectus optio repellendus nihil?</p>
+
+	<img src="images/flower.png" title="flower" width="200px">
+	<br><br>
+
+	Name <input type="text"> <br><br>
+
+	Gender <input type="radio"> Male <input type="radio"> Female <br><br>
+
+	Address <input type="text"> <br><br>
+
+	Password <input type="password"> <br><br>
+	
+</body>
+</html>
