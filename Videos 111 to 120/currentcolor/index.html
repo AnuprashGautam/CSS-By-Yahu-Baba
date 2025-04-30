@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currentcolor Property</title>
+    <style>
+        .box{
+            color: red;
+            width: 500px;
+            border: 5px solid currentColor;
+            margin: 50px auto;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        .box h2{
+            border-bottom: 2px solid currentColor;
+        }
+
+        .box a{
+            /* This property doesn't work with the anchor tag properly. */
+            /* background-color: currentColor; */
+
+            color: currentColor;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Heading</h2>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat alias ex ea dolor nesciunt optio sed odit consectetur veritatis? Expedita blanditiis similique non ab. Laudantium modi consequatur beatae doloremque autem dignissimos natus eius numquam ullam aliquam sunt, tempore sint placeat eaque itaque labore? Doloremque, officia maiores ullam similique ex consectetur?</p>
+
+        <a href="https://www.google.com">Google</a>
+    </div>
+</body>
+</html>

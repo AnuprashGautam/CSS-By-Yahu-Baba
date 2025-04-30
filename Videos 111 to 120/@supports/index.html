@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@support Concept</title>
+    <style>
+        :root{
+            --test: grey;
+        }
+
+        @supports (display: grid)
+        {
+            body{
+                background-color: orange;
+            }
+        }
+
+        @supports not (display: grid)
+        {
+            body{
+                background-color: green;
+            }
+        }
+
+        @supports (display: grid) and (display: block)
+        {
+            body{
+                background-color: blue;
+            }
+        }
+
+        @supports (--test: var(--test))
+        {
+            body{
+                background-color: var(--test);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>This is the body.</h2>
+</body>
+</html>
