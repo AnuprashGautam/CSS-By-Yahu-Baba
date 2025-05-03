@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aspect-ratio Property</title>
+
+    <style>
+        #image-container{
+            width: 800px;
+            aspect-ratio: 1/2;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        
+        img{
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+
+        @media screen and (max-width: 480px) {
+            #image-container{
+                width: 100%;
+            }
+        }
+
+        #video-container{
+            margin-top: 20px;
+            width: 400px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        #video-container iframe{
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+            /* aspect-ratio: 4/3; */
+        }
+
+        @media screen and (max-width: 480px) {
+            #video-container{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>aspect-ratio Property</h1>
+
+    <div id="image-container">
+        <img src="image.png" alt="Photo">
+
+        <h2>Narendra Modi</h2>
+        <h3>Prime Minister of India</h3>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil eveniet beatae quasi tenetur voluptatum cupiditate repellendus facere optio magnam excepturi nesciunt corrupti, possimus nemo. Accusamus, qui unde. Odit quos nihil eum doloremque repudiandae facilis consequatur repellat aliquam minus tempora blanditiis ratione provident sint, harum quae rerum soluta rem, deleniti sit fuga architecto! Quas vitae aliquam recusandae illo autem, iusto sed quam facilis nostrum maxime ex amet ducimus. Ducimus repudiandae architecto voluptatum, adipisci cupiditate omnis odio in, pariatur magni eum maiores aperiam non nostrum sequi quisquam molestias velit quos, reprehenderit excepturi accusantium. Quis similique, voluptatum alias dolore fuga soluta rem, dicta officiis odio numquam sed facere? Delectus, rerum eum asperiores soluta sunt quae iste enim eaque qui debitis itaque, sequi, illum voluptas. Ipsum eveniet sapiente odio. Iste, ullam quaerat? Cumque hic labore facere quaerat esse consequatur fugit quisquam obcaecati ex ipsum molestiae excepturi eos, nesciunt mollitia dolor quos reprehenderit in eligendi ab, officiis odit a ipsam culpa? Magni a ea animi accusantium iusto. Quis eaque nesciunt harum rem fugit? Rerum doloribus suscipit consequuntur illo nobis velit animi sunt eveniet possimus, odio repudiandae modi cumque laborum accusantium harum id amet placeat qui at tempora error esse ut corporis. Error, commodi ad voluptatibus, necessitatibus ex repudiandae exercitationem reiciendis dolore, corrupti voluptates veniam delectus natus itaque. Modi dicta in culpa illo cumque, suscipit assumenda iure quo itaque blanditiis velit aperiam architecto explicabo earum facere qui et nulla vero nobis nemo perspiciatis. Repudiandae, cupiditate. Eum aliquid debitis voluptas quaerat voluptatibus quae odit earum assumenda eligendi tempore esse iste distinctio repellendus magnam omnis ea mollitia cupiditate dolorum, alias expedita magni, eveniet id. Dolor modi, praesentium voluptatibus dicta quo illo libero consectetur. Dolorum qui doloribus fuga corrupti corporis, perferendis iste unde aliquam, nisi voluptates quas temporibus? Placeat minima laudantium cumque eius quae ea aliquam quis id officia esse pariatur voluptatem tempora quibusdam quam fuga reprehenderit, sapiente mollitia. Laborum accusamus aliquid molestiae vitae, possimus temporibus minima reiciendis soluta quasi eos animi mollitia asperiores recusandae ea autem incidunt sapiente! Dolor ut nisi consequatur tempore, itaque est repellat culpa, delectus minus, enim officiis nulla vero explicabo fuga molestiae natus sequi quia ab illo excepturi id. Beatae quisquam libero ullam, reiciendis quos impedit et necessitatibus aperiam voluptatibus neque delectus asperiores reprehenderit excepturi sequi assumenda? Cupiditate consequuntur optio corporis. Labore ipsum officiis commodi ab minus laudantium sunt officia! Odio numquam illo cupiditate! Placeat, ea fugiat numquam, odio obcaecati ducimus accusantium minus dolore maxime voluptatum quod omnis ipsum! Nam nisi numquam, in possimus doloribus similique maiores cum ipsa ipsam, dolores vero enim alias placeat? Rem modi iste, porro omnis perspiciatis adipisci suscipit, enim sapiente ab minima pariatur officia non laborum eum optio voluptates harum, libero aperiam praesentium. Excepturi ex velit aperiam aliquid vel error incidunt saepe adipisci aliquam, blanditiis voluptatum alias id pariatur hic natus, totam quos quam eligendi. Facilis incidunt maxime ipsa corrupti totam quod hic a quis omnis in minus tempore repellat deserunt nemo praesentium quisquam laboriosam, exercitationem soluta neque laudantium. Ut, corrupti asperiores quasi provident repellendus autem adipisci distinctio tempore.</p>
+    </div>
+
+    <div id="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uyiG6uw-6pA?si=Zb7Rq35k4tfqA_Oo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</body>
+</html>

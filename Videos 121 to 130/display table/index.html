@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display:table Property</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column ;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1{
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        #table{
+            display: table;
+            border: 2px solid black;
+            width: 800px;
+        }
+
+        .row{
+            display: table-row;
+            
+        }
+
+        .cell{
+            display: table-cell;
+            border: 2px solid black;
+        }
+
+        #table-header{
+            display: table-header-group;
+            text-align: center;
+            font-weight: bold;
+            background-color: lightblue;
+        }
+
+        #table-row{
+            display: table-row-group;
+            text-align: center;
+            /* background-color: lightgoldenrodyellow;   So that the col group applied color can be seen. */
+        }
+
+        #table-footer{
+            display: table-footer-group;
+            text-align: center;
+            font-weight: bold;
+            background-color: lightcoral;
+        }
+
+        #table-colgroup{
+            display: table-column-group;
+        }
+
+        .table-col{
+            display: table-column;
+        }
+
+        .col-2{
+            background-color: lightgreen;
+            width: 300px;
+        }
+
+        .col-4{
+            background-color: lightgrey;
+        }
+       
+        #caption{
+            display: table-caption;
+            text-transform: uppercase;
+            color: red;
+            font-size: 20px;
+            text-align: center;
+            caption-side: bottom;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display: Table Property</h1>
+
+    <div id="table">
+        <div id="caption">
+            <h1>Students' Record</h1>
+        </div>
+
+        <div id="table-colgroup">
+            <div class="table-col col-1">Col-1</div>
+            <div class="table-col col-2">Col-2</div>
+            <div class="table-col col-3">Col-3</div>
+            <div class="table-col col-4">Col-4</div>
+        </div>
+
+        <div id="table-header">
+            <div class="cell">Roll No</div>
+            <div class="cell">Name</div>
+            <div class="cell">City</div>
+            <div class="cell">Marks</div>
+        </div>
+
+        <div id="table-row">
+            <div class="row">
+                <div class="cell">1</div>
+                <div class="cell">Anuprash Gautam</div>
+                <div class="cell">Mumbai</div>
+                <div class="cell">80</div>
+            </div>
+            <div class="row">
+                <div class="cell" style="vertical-align: middle;">2</div>
+                <div class="cell">Anirudh Sharma Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis assumenda distinctio sit laborum veniam accusamus optio totam aliquam debitis possimus!</div>
+                <div class="cell">Meerut</div>
+                <div class="cell">90</div>
+            </div>
+            <div class="row">
+                <div class="cell">3</div>
+                <div class="cell">Ankush Baliyan</div>
+                <div class="cell">Goa</div>
+                <div class="cell">88</div>
+            </div>
+            <div class="row">
+                <div class="cell">4</div>
+                <div class="cell">Rahul</div>
+                <div class="cell">Dubai</div>
+                <div class="cell">89</div>
+            </div>
+        </div>
+
+        <div id="table-footer">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell">Total:</div>
+            <div class="cell">367</div>
+        </div>
+    </div>
+</body>
+</html>

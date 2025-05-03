@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:is() Pseudo Class</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #container{
+            width: 60%;
+            height: 70vh;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #section-1
+        {
+            background-color: aquamarine;
+        }
+
+        #section-2
+        {
+            background-color: rgb(188, 188, 188);
+        }
+
+        #section-1 :is(#square, #circle)
+        {
+            background-color: aqua;
+        }
+
+        :is(#section-1, #section-2)
+        {
+            height: 100%;
+        }
+
+        :is(#section-1, #section-2) #mainheading
+        {
+            color: red;
+        }
+
+        :is(#section-1, #section-2) :is(p)
+        {
+            color: gold;
+        }
+
+        :is(#section-1, #section-2) p:hover{
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="section-1">
+            <div id="mainheading">
+                <h1>1. Main Heading</h1>
+            </div>
+    
+            <div id="subheading">
+                <h2>1.1 Sub Heading</h2>
+            </div>
+    
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dicta nisi veritatis tempora nulla doloribus provident fuga mollitia dignissimos eos.</p>
+    
+            <div id="subheading">
+                <h2>1.2 Sub Heading</h2>
+            </div>
+    
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos reprehenderit odio nulla recusandae unde laudantium tenetur, exercitationem nobis dolorum magni.</p>
+
+            <div id="square">Square</div>
+
+            <div id="circle">Circle</div>
+        </div>
+    
+        <div id="section-2">
+            <div id="mainheading">
+                <h1>Main Heading</h1>
+            </div>
+    
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, accusantium quos. Incidunt, recusandae dolores error necessitatibus quae perspiciatis expedita! Excepturi!</p>
+        </div>
+    </div>
+</body>
+</html>
