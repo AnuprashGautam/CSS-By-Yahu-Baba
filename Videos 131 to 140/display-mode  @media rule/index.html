@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-mode @media rule</title>
+    <style>
+        div{
+            display: none;
+        }
+
+        .fullscreen__display-mode{
+            color: red;
+            background-color: cyan;
+        }
+
+        .browser__display-mode{
+            color: yellow;
+            background-color: green;
+        }
+
+        .minimal__display-mode{
+            color: white;
+            background-color: black;
+        }
+
+        @media (display-mode: browser){
+            .browser__display-mode{
+                display: block;
+            }
+        }
+
+        @media (display-mode: minimal-ui){
+            .minimal__display-mode{
+                display: block;
+            }
+        }
+
+        @media (display-mode: fullscreen){
+            .fullscreen__display-mode{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fullscreen__display-mode">
+        <h1>The fullscreen mode is on.</h1>
+    </div>
+
+    <div class="minimal__diplay-mode">
+        <h1>The minimal ui mode is on.</h1>
+    </div>
+
+    <div class="browser__display-mode">
+        <h1>The browser mode is on.</h1>
+    </div>
+</body>
+</html>
