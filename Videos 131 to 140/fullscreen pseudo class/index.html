@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fullscreen pseudo class</title>
+    <style>
+      #box:fullscreen {
+        /* background: linear-gradient(to right, black, white); */
+        /* color: black; */
+        background-size: contain;
+
+        background: url(pattern.jpg);
+      }
+
+      #box:fullscreen,
+      #box:-webkit-full-screen,
+      #box:-moz-full-screen,
+      #box:-ms-fullscreen {
+        background-color: orange;
+        color: black;
+      }
+
+      #box:not(:fullscreen) {
+        /* background-color: yellow; */
+        
+
+        /* color: white; */
+        /* width: 50%;
+        height: 50vh; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="box">
+    Hello this is the box that changes its css using fullscreen pseudo class.
+    <br />
+    <button onclick="document.exitFullscreen()">Exit fullscreen</button>
+  </div> -->
+    <img src="modi.png" alt="Image" id="box" />
+
+    <button onclick="document.getElementById('box').requestFullscreen()">
+      Make me fullscreen
+    </button>
+  </body>
+</html>
