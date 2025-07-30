@@ -1,0 +1,13 @@
+body{
+    background-color: cadetblue;
+}
+
+p{
+    font-family: arial;
+    line-height: 25px;
+}
+
+h1,h2{
+    font-family: arial;
+    color: red !important;
+}

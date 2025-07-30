@@ -1,0 +1,21 @@
+@import "print.css" print;
+
+h1,h2 {
+    color: green;
+}
+
+/* @media print {
+    body{
+        background-color: cyan;
+    }
+
+    p{
+        font-family: arial;
+        line-height: 25px;
+    }
+
+    h1,h2 {
+        font-family: arial;
+        color: red;
+    }
+} */
