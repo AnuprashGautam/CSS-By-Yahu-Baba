@@ -1,0 +1,7 @@
+h2{
+    break-before: page;
+}
+
+table{
+    break-inside: avoid;
+}
