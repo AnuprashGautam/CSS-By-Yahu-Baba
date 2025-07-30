@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>has in form tag</title>
+
+    <style>
+        @supports(selector(:has(p))) {
+            form:has(input[type="checkbox"]:checked) button {
+                background-color: tomato;
+                color: white;
+            }
+
+            label:has(+ input[type="checkbox"]:checked) {
+                color: green;
+            }
+
+            label:has(+ input:focus) {
+                color: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="text" name="name"><br><br>
+
+        <label for="hobby">Table Tennis</label>
+        <input type="checkbox" name="hobby" id="">
+
+        <label for="hobby">Chess</label>
+        <input type="checkbox" name="hobby" id=""> <br><br>
+
+        <button>Save</button>
+    </form>
+</body>
+
+</html>

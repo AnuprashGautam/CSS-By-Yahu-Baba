@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>has pseudo class</title>
+    <style>
+        div{
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px
+        }
+
+        /* div:has(h2, h3, h4){
+            background-color: pink;
+        } */
+
+        /* div:has(> h2){
+            background-color: pink;
+        }
+
+        div:has(h2 + p){
+            background-color: green;
+        }
+
+        p:has(+ h2){
+            color: cyan;
+        }
+
+        div:not(:has(h2)){
+            background-color: red;
+        }
+
+        div:has(h2) li{
+            color: green;
+        } */
+
+        div:has(*:empty){
+            color:red;
+        }
+
+        div:not(:has(*:empty)){
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <section>
+            <h2>Hello World</h2>
+        </section>
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sit ad optio doloremque explicabo natus, nesciunt consectetur totam fugit provident?</p>
+    </div>
+
+    <div>
+        <h3>I am the heading 3.</h3>
+    </div>
+
+    <div>
+        <h2> This heading 2 has immediately p</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, hic!</p>
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, aliquam.</p>
+        <h2>Hello I am the heading 2.</h2>
+    </div>
+
+    <div>
+        <h2>Fruits name</h2>
+
+        <li>Apple</li>
+        <li>Grapes</li>
+        <li>Orange</li>
+        <li>Banana</li>
+    </div>
+
+    <div>
+        <h3>Car name</h>
+
+        <li></li>
+        <li>Mahendra</li>
+        <li>Maruti</li>
+        <li>Mercedes</li>
+    </div>
+</body>
+</html>
