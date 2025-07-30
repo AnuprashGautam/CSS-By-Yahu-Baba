@@ -1,0 +1,23 @@
+@page:first{
+    margin: 1in;
+}
+
+@page:left{
+    margin: 1in 3in 1in 1in;
+}
+
+@page:right{
+    margin: 1in 1in 1in 3in;
+}
+
+
+h1{
+    font-family: arial;
+    border-bottom: 2px solid #000;
+}
+
+p{
+    text-align: justify;
+    line-height: 25px;
+    font-family: arial;
+}
