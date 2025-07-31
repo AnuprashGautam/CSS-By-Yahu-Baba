@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar with Container Query</title>
+    <!-- We'll use the Inter font for a modern look. -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+    <style>
+        /* This is the core part of the demonstration. We define a container for the body.
+           This means we can write queries that are based on the body's size, not the viewport's. */
+        body {
+            font-family: 'Inter', sans-serif;
+            container-type: inline-size; /* 'inline-size' is the width axis */
+            background-color: #f3f4f6;
+            color: #1f2937;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* The container query checks if the container's width is less than or equal to 600px.
+           If it is, the styles inside this block will be applied. */
+        @container (max-width: 600px) {
+            /* On small screens, change the layout of the main content area.
+               The header will now take up the full width, and the main content will be below it. */
+            body {
+                flex-direction: column;
+            }
+
+            /* The navigation menu itself will switch from a row to a column layout. */
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 1.5rem; /* Add some padding to make it look like a sidebar */
+            }
+
+            /* Adjust the list items to be stacked vertically. */
+            .navbar ul {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-top: 1rem;
+            }
+
+            /* Add some spacing between the stacked links. */
+            .navbar li {
+                margin-right: 0;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        /* Basic styling for the header and navigation, applied regardless of screen size. */
+        .header {
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+            margin: 1rem;
+            padding: 1.5rem;
+        }
+
+        /* Flexbox is used to arrange the navbar's content horizontally by default. */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #1f2937;
+            font-weight: 600;
+        }
+
+        /* Styling for the main content area */
+        .main-content {
+            background-color: #ffffff;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 1rem;
+            padding: 2rem;
+            flex-grow: 1; /* Allows the content to fill the remaining space */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <h1>My Website</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h2>Welcome to the Home Page</h2>
+        <p>
+            This is an example of a simple responsive layout. Try resizing the browser window to see the navigation bar automatically change to a sidebar when the width of the container is reduced. This is made possible by the CSS Container Query, a powerful new feature in CSS.
+        </p>
+        <p>
+            The container query allows us to apply styles based on the size of a parent element (the container) rather than the entire viewport. This provides more granular control over responsive designs, making components truly self-contained and adaptable to any layout.
+        </p>
+    </main>
+</body>
+</html>
