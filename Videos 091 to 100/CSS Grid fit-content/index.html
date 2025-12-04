@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 80%;
+            background-color: lightgray;
+            margin: 50px auto 0;
+
+            display: grid;
+            grid-template-columns: fit-content(200px) fit-content(300px) 1fr;
+            grid-template-rows: repeat(2, minmax(100px, min-content));
+
+            grid-auto-rows: 80px;
+        }
+
+        .item1{
+            background-color: red;
+        }
+
+        .item2{
+            background-color: green;
+        }
+
+        .item3{
+            background-color: blue;
+        }
+
+        .item4{
+            background-color: yellow;
+        }
+
+        .item5{
+            background-color: orange;
+        }
+
+        .item6{
+            background-color: palegreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">First Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis ab nostrum voluptates quo dolor illum fugiat dignissimos, exercitationem enim maxime neque provident quibusdam eius commodi porro facere! Unde nemo quod fugiat sint magni excepturi dolorum ab repellat facilis! Quibusdam incidunt magni quisquam cupiditate veniam aliquam mollitia maxime ipsum nisi culpa expedita, quam quos, harum deserunt exercitationem, consectetur id reprehenderit quaerat rerum. Laudantium blanditiis itaque nisi aliquid iste et. Doloremque consectetur ipsam dignissimos est eum. Impedit necessitatibus nobis temporibus nulla explicabo dolor odit voluptas culpa nostrum corrupti officia animi, ipsam quasi quo aliquam. Est, laborum ea possimus eos dolorum quia?</div>
+        
+        <div class="items item2">Second Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore nesciunt sit illum voluptatum, eius amet accusantium quaerat. Atque rem accusantium eum, doloremque saepe reprehenderit quis tenetur aliquid amet maiores quaerat, necessitatibus, dolorem natus a beatae ipsum nisi? Quaerat nostrum reprehenderit dolores, veniam, voluptates excepturi aut culpa id eaque sint, commodi possimus a. Impedit veniam, libero hic voluptatibus amet obcaecati, sequi repudiandae corrupti iusto a odit similique rem maxime. Nobis quibusdam ipsam officiis tenetur nisi corrupti consectetur incidunt consequuntur voluptas, optio ducimus totam assumenda aliquid praesentium earum magnam dolorem, tempora quisquam! Unde dolorum nostrum accusamus pariatur, ad neque quod voluptates tempore voluptatibus molestias sed eius consequuntur nemo fuga expedita exercitationem. Suscipit, laboriosam facere a possimus quam accusamus! Laboriosam quos corporis inventore esse tenetur pariatur sunt adipisci accusantium. Architecto, veritatis nostrum aliquid magni assumenda incidunt cumque dolor harum quae aut doloribus consectetur at temporibus quidem vel molestiae quod molestias totam soluta impedit facere. Reiciendis culpa illum velit natus nemo, doloribus blanditiis rerum eveniet tenetur placeat dolore eos enim fugit voluptate sapiente maxime. Quos accusamus autem provident quidem, dolores reiciendis laborum quia ratione a vitae ad! Iure voluptatem odio adipisci aperiam, blanditiis at ratione necessitatibus saepe voluptatibus dolorum dolores quidem eaque iste quis?</div>
+        
+        <div class="items item3">Third</div>
+        <div class="items item4">Fourth</div>
+        <div class="items item5">Fifth</div>
+        <div class="items item6">Sixth</div>
+    </div>
+</body>
+</html>
