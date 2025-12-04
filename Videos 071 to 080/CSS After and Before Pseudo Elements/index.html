@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p{
+            margin-top: 200px;
+            border: 1px solid black;
+        }
+
+        p::before{
+            content: 'Hello';
+            background-color: red;
+            color: black;
+            display: block;
+        }
+
+        p::after{
+            content: 'World';
+            background-color: greenyellow;
+            color: black;
+            display: block;
+        }
+
+        .quote{
+            position: relative;
+            padding: 10px 20px;
+            font-size: 24px;
+        }
+
+        .quote::before{
+            font-size: 40px;
+            content: '"';
+            color: red;
+            position: absolute;
+            top: 0px;
+            left: 10px;
+        }
+
+        .quote::after{
+            font-size: 40px;
+            content: '"';
+            color: red;
+            position: absolute;
+            bottom: 0px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>::before and ::after Pseudo Elements</h2>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+
+    <h2>Quote Example</h2>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="quote">
+        <span>The journey of thousands of miles start with a single step.</span>
+    </div>
+</body>
+</html>

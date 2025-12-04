@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --main-color:blue;
+        }
+
+        h2{
+            color: var(--main-color);
+        }
+
+        input:focus{
+            border: 2px solid skyblue;
+        }
+
+        input[type='radio']:checked + label{
+            box-shadow: 0 0 0 3px skyblue;
+        }
+
+        input[type='checkbox']:checked + label{
+            box-shadow: 0 0 0 3px green;
+        }
+
+        input[type='text']:disabled{
+            border: 3px solid red;
+        }
+
+        input:required
+        {
+            border: 3px solid orange;
+        }
+
+        input:in-range{
+            background-color: palegreen;
+            color: black;
+        }
+
+        input:out-of-range{
+            background-color: orange;
+            color: red;
+        }
+
+        input:read-only{
+            background-color: pink;
+            color: black;
+        }
+
+        input[type='email']:valid{
+            background-color: green;
+            color: black;
+        }
+
+        input[type='email']:invalid{
+            background-color: red;
+            color: black;
+        }
+
+        input:default + label{
+            color: green;
+            background-color: pink;
+        }
+
+        option:default {
+            color: green;
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Form:</h2>
+    <br><hr><br>
+    <form action="">
+
+    <label for="first_name">First Name: </label><input id="first_name" type="text" placeholder="Enter First Name" required>
+
+    <br><br>
+
+    <label for="surname">Second Name: </label><input id="surname" type="text" placeholder="Enter Surname" disabled>
+
+    <br><br>
+
+    <label for="surname">Middle Name: </label><input id="middlename" type="text" placeholder="Enter Middle Name" value="Nothing" readonly>
+
+    <br><br>
+
+    <label for="age">Age: </label><input id="age" type="number" min="1" max="100">
+
+    <br><br>
+
+    <label for="email">Email: </label><input id="email" type="email" placeholder="Enter email">
+
+    <br><br>
+
+    <label>Your Hobbies: </label>
+    <input type="checkbox" name="hobbies" value="sports" checked><label for="hobbies">Sports</label>
+    <input type="checkbox" name="hobbies" value="music"><label for="hobbies">Music</label>
+    <input type="checkbox" name="hobbies" value="travel"><label for="hobbies">Travel</label>
+    <input type="checkbox" name="hobbies" value="dance"><label for="hobbies">Dance</label>
+    <input type="checkbox" name="hobbies" value="drawing"><label for="hobbies">Drawing</label>
+
+    <br><br>
+
+    <label>Gender: </label>
+    <input type="radio" name="gender" value="male" checked><label for="gender">Male</label>
+    <input type="radio" name="gender" value="female"><label for="gender">Female</label>
+    <br><br>
+    <label>Country: </label>
+    <select name="country">
+        <option value="none">Select</option>
+        <option value="india" selected>India</option>
+        <option value="pakistan">Pakistan</option>
+        <option value="nepal">Nepal</option>
+        <option value="bangladesh">Bangladesh</option>
+    </select>
+    <br><br>
+    <button>Submit</button>
+    </form>
+</body>
+</html>

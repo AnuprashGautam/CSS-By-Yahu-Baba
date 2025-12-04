@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: heading;
+        }
+
+        h2{
+            counter-reset: subheading;
+        }
+
+        h2::before{
+            content: "Section "counter(heading)": ";
+            counter-increment: heading;
+            color: red;
+        }
+
+        h3::before{
+            content: "Subsection "counter(heading)"."counter(subheading)": ";
+            counter-increment: subheading;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Counter Example</h1>
+
+    <br><hr><br>
+
+    <h2>HTML</h2>
+    <h3>Introduction</h3>
+    <h3>Forms</h3>
+
+    <h2>CSS</h2>
+    <h3>What is CSS?</h3>
+    <h3>What is Class?</h3>
+    <h3>What is ID?</h3>
+
+    <h2>JS</h2>
+    <h3>What is JS?</h3>
+    <h3>What is Node?</h3>
+    <h3>What is functions?</h3>
+</body>
+</html>
