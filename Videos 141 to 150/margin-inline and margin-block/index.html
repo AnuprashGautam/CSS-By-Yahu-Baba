@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: flex;
+            width: 900px;
+            border: 5px solid black;
+        }
+
+        .box{
+            width: 300px;
+            height: 100%;
+            background-color: orange;
+            border: 1px solid red;
+        }
+
+        .box2{
+            /* margin-inline-start: 20px;
+            margin-inline-end: 40px; */
+            margin-inline: 20px 40px;
+            writing-mode: vertical-rl;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, esse?</div>
+        <div class="box box2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia atque provident consequuntur reprehenderit eius eveniet adipisci consectetur, dolorem labore esse!</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, consequuntur.</div>
+    </div>
+</body>
+</html>
