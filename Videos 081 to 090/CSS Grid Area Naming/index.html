@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            background-color: grey;
+            border: 3px solid red;
+            padding: 10px;
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr );
+            grid-template-rows: 125px 50px 100px 500px 100px;
+            grid-gap: 20px;
+
+            grid-template-areas: "header header header"
+                                    "menu menu menu"
+                                    "box1 box2 sidebar"
+                                    "content content sidebar"
+                                    "footer footer footer";
+        }
+
+        .header{
+            background-color: tomato;
+
+            grid-area: header;
+        }
+
+        .menu{
+            background-color: cyan;
+
+            grid-area: menu;
+        }
+
+        .boxes{
+            background-color: yellow;
+        }
+
+        .box1{
+
+            grid-area: box1;
+        }
+
+        .box2{
+
+            grid-area: box2;
+        }
+
+        .content{
+            background-color: #eee;
+
+
+            grid-area: content;
+        }
+
+        .sidebar{
+            background-color: aquamarine;
+
+            grid-area: sidebar
+        }
+
+        .footer{
+            background-color: tomato;
+
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div style="width: 100%; text-align: center; color: blue;">
+        <h1>Website Grid Layout</h1>
+    </div>
+
+    <div class="container">
+        <div class="header" >
+            <h2>Header</h2>
+        </div>
+
+        <div class="menu">
+            <h2>Menu</h2>
+        </div>
+
+        <div class="boxes box1">
+            <h2>Box-1</h2>
+        </div>
+
+        <div class="boxes box2">
+            <h2>Box-2</h2>
+        </div>
+
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+        </div>
+
+        <div class="content">
+            <h2>Container</h2>
+        </div>
+
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
+    </div>
+</body>
+</html>

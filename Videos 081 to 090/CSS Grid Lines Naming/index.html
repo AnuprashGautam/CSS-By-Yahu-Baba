@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            background-color: grey;
+            border: 3px solid red;
+            padding: 10px;
+
+            display: grid;
+            grid-template-columns: repeat(3,[col-start] 1fr [col-end]);
+            grid-template-rows: [header-start]125px[header-end menu-start] 50px[menu-end box-start] 100px[box-end content-start] 500px[content-end footer-start] 100px[footer-end];
+            grid-gap: 20px
+        }
+
+        .header{
+            background-color: tomato;
+
+            grid-column: col-start 1 / col-end 3;
+            grid-row: header-start / header-end;
+        }
+
+        .menu{
+            background-color: cyan;
+
+            
+            grid-column: col-start 1 / col-end 3;
+            grid-row: menu-start / menu-end;
+        }
+
+        .boxes{
+            background-color: yellow;
+        }
+
+        .box1{
+            grid-column: col-start 1 / col-end 1;
+            grid-row: box-start / box-end;
+        }
+
+        .box2{
+            grid-column: col-start 2 / col-end 2;
+            grid-row: box-start / box-end;
+        }
+
+        .content{
+            background-color: #eee;
+
+            grid-column: col-start 1 / col-end 2;
+            grid-row: content-start / content-end;
+        }
+
+        .sidebar{
+            background-color: aquamarine;
+
+            grid-column: col-start 3 / col-end 3;
+            grid-row: box-start / content-end;
+        }
+
+        .footer{
+            background-color: tomato;
+
+            grid-column: col-start 1 / col-end 3;
+            grid-row: footer-start / footer-end;
+        }
+
+    </style>
+</head>
+<body>
+    <div style="width: 100%; text-align: center; color: blue;">
+        <h1>Website Grid Layout</h1>
+    </div>
+
+    <div class="container">
+        <div class="header" >
+            <h2>Header</h2>
+        </div>
+
+        <div class="menu">
+            <h2>Menu</h2>
+        </div>
+
+        <div class="boxes box1">
+            <h2>Box-1</h2>
+        </div>
+
+        <div class="boxes box2">
+            <h2>Box-2</h2>
+        </div>
+
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+        </div>
+
+        <div class="content">
+            <h2>Container</h2>
+        </div>
+
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
+    </div>
+</body>
+</html>

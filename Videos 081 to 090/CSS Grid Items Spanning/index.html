@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            background-color: wheat;
+            border: 2px solid black;
+            margin: 0 auto 0 auto;
+        
+            width: 400px;
+            height: 600px;
+
+            display: grid;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .items{
+            border: 2px solid black;
+        }
+
+        .item1{
+            background-color: antiquewhite;
+
+            grid-row: 1 / span 2 ;
+            grid-column: 1 / span 2;
+
+        }
+
+        .item2{
+            background-color: burlywood;
+        }
+
+        .item3{
+            background-color: aquamarine;
+        }
+
+        .item4{
+            background-color: azure;
+        }
+
+        .item5{
+            background-color: bisque;
+        }
+
+        .item6{
+            background-color: beige;
+        }
+
+        .item7{
+            background-color: aqua;
+        }
+
+        .item8{
+            background-color: azure;
+        }
+
+        .item9{
+            background-color: paleturquoise;
+
+            grid-row: 3 / span 2;
+            grid-column: 3 / span 2;
+        }
+
+        .item10{
+            background-color: palegoldenrod;
+        }
+
+        .item11{
+            background-color: palegreen;
+
+            grid-row: 5 / -1;
+            grid-column: 1 / 3;
+        }
+
+        .item12{
+            background-color: palevioletred;
+        }
+
+        .item13{
+            background-color: wheat;
+        }
+
+        .item14{
+            background-color: skyblue;
+        }
+
+        .item15{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Grid (Instagram Explore Page)</h2>
+
+    <div class="container">
+        <div class="items item1">First</div>
+        <div class="items item2">Second</div>
+        <div class="items item3">Third</div>
+        <div class="items item4">Fourth</div>
+        <div class="items item5">Fifth</div>
+        <div class="items item6">Sixth</div>
+        <div class="items item7">Seventh</div>
+        <div class="items item8">Eighth</div>
+        <div class="items item9">Ninth</div>
+        <div class="items item10">Tenth</div>
+        <div class="items item11">Eleventh</div>
+        <div class="items item12">Twelvth</div>
+        <div class="items item13">Thirteen</div>
+        <div class="items item14">Fourteen</div>
+        <div class="items item15">Fifteen</div>
+    </div>
+</body>
+</html>
