@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @layer two, three, one;
+        @import url(layer-one.css) layer(one);
+
+        @layer two{
+            p{
+                color: blue;
+            }
+        }
+
+        @layer three{
+            p{
+                color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+   <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam odit fugit in enim totam, placeat corporis tempora commodi nisi! Praesentium suscipit odio magnam necessitatibus quod aliquid sequi nulla amet labore?
+   </p>
+</body>
+</html>

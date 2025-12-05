@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: violet;
+        }
+
+        @layer three, two, one;
+
+        @layer one{
+            #id-example{
+                color: red;
+            }
+        }
+
+        @layer two{
+            .class-example{
+                color: green;
+            }
+        }
+
+        @layer three{
+            p{
+                color: blue;
+            }
+        }
+
+        p{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p class="class-example" id="id-example" style="color: orange;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eius iste suscipit minus ratione fugiat tempora dolore repellat architecto recusandae in porro delectus quod commodi mollitia nulla aperiam, earum quae?
+    </p>
+</body>
+</html>

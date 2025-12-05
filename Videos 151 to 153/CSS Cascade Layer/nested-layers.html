@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @layer one.three, one.two;
+
+        @layer one
+        {
+            /* @layer two, three; */
+
+            @layer two{
+                p{
+                    color: red;
+                }
+            }
+
+            @layer three{
+                p{
+                    color: blue;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fugiat repellendus dolore sunt voluptatem, ad corrupti aspernatur minus deserunt tenetur libero tempore totam aliquam nihil odit deleniti iure molestiae beatae.
+    </p>
+</body>
+</html>
